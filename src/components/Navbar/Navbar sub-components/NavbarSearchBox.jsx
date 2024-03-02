@@ -16,8 +16,8 @@ function NavbarSearchBox() {
 
     return (
         <Box color={'#fff'}>
-            <SearchIcon pos={'relative'} top={7} />
-            <Input onFocus={moveSearchIcon} onBlur={backSearchIcon} ref={navSearch} variant='flushed' placeholder='     Search' />
+            <SearchIcon className='c-b' pos={'relative'} top={7} />
+            <Input className='c-b' onFocus={moveSearchIcon} onBlur={backSearchIcon} ref={navSearch} variant='flushed' placeholder='        Search' />
         </Box>
     )
 }

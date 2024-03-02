@@ -25,7 +25,7 @@ function NavbarTopCarousel() {
         }, 3500);
     }, [textIndex])
     return (
-        <Flex w="100%" cursor="grab" bg="#151515" color="#fff" alignItems="center" h={10} px={52} fontWeight={600} className="rubik">
+        <Flex w="100%" cursor="grab" bg="#151515" color="#fff" alignItems="center" h={10} px={52} fontWeight={600} className="rubik navbarCarousel">
             <ChevronLeftIcon onClick={prevSlide} />
             <Spacer />
             <Text fontSize={15}>{NavBarTopCarouselText[textIndex]}</Text>

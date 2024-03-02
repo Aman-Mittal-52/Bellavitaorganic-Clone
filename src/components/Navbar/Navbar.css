@@ -3,6 +3,16 @@
     background-size: contain;
 }
 
+#navbar{
+    background: transparent;
+    z-index: 2;
+}
+
+.navbarCarousel{
+    color: #fff !important;
+    background: #000 !important;
+}
+
 #navbarMenu{
     display: block;
 }
