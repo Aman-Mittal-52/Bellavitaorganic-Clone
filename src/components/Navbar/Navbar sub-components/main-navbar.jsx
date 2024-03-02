@@ -103,7 +103,7 @@ function MainNavbar({ bgcColor }) {
                     </Link>
                 </Box>
                 <Spacer />
-                <Flex w={28} className='bg-w--c-b' color={'#fff'} justifyContent={'space-between'}>
+                <Flex w={28}  color={'#fff'} justifyContent={'space-between'}>
                     <CiUser className='c-b' size={30} />
                     <IoBasketOutline className='c-b' size={30} />
                 </Flex>
