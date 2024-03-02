@@ -1,4 +1,14 @@
-#Navbar {
+#HomePageNavbar {
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://bellavitaorganic.com/cdn/shop/files/1920-720_6cdeee36-aa81-4ba8-ab59-060495a5b1ba.jpg?v=1709200793&width=1920);
-    background-size: cover;
+    background-size: contain;
+}
+
+#navbarMenu{
+    display: block;
+}
+
+@media all and (max-width:990px){
+    #navbarMenu{
+        display: none;
+    }
 }
