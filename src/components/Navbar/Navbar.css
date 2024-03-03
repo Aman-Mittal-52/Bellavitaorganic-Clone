@@ -1,6 +1,7 @@
 #HomePageNavbar {
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://bellavitaorganic.com/cdn/shop/files/1920-720_6cdeee36-aa81-4ba8-ab59-060495a5b1ba.jpg?v=1709200793&width=1920);
     background-size: contain;
+    width: calc(100vw - 15px);
 }
 
 #navbar{
@@ -17,7 +18,18 @@
     display: block;
 }
 
-@media all and (max-width:990px){
+@media all and (max-width:990px) and (min-width:600px){
+    #navbarMenu{
+        display: none;
+    }
+}
+
+@media all and (max-width:600px) {
+    #HomePageNavbar {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(https://bellavitaorganic.com/cdn/shop/files/860-1150_3fce6e95-2890-4cb8-b61e-86801edd064c.jpg?v=1709200836&width=800);
+        background-size: cover;
+        height: 800px;
+    }
     #navbarMenu{
         display: none;
     }
