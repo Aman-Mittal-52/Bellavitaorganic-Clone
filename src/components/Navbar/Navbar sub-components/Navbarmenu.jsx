@@ -24,7 +24,7 @@ function Navbarmenu() {
                 </Link>
                 <Spacer />
                 <Link to='/collections/all-products'>
-                    <Text className={'navList c-b'} fontSize={11}>SHOP ALL</Text>
+                    <Text className={'navList c-b'} zIndex={2} fontSize={11}>SHOP ALL</Text>
                 </Link>
                 <Spacer />
                 <Link to='/collections/bestsellers'>
@@ -35,7 +35,9 @@ function Navbarmenu() {
                     <Menu isOpen={isOpenPerfumes} onClose={() => setIsOpenPerfumes(false)}>
                         <MenuButton
                             onMouseEnter={() => setIsOpenPerfumes(true)}
-                            onMouseLeave={() => setIsOpenPerfumes(false)}>
+                            onMouseLeave={() => setTimeout(() => {
+                                setIsOpenPerfumes(false)
+                            }, 1000)}>
                             <Text className={'navList c-b'} fontSize={11}>PRFUMES</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
@@ -53,7 +55,9 @@ function Navbarmenu() {
                     <Menu isOpen={isOpenBath} onClose={() => setIsOpenBath(false)}>
                         <MenuButton
                             onMouseEnter={() => setIsOpenBath(true)}
-                            onMouseLeave={() => setIsOpenBath(false)}>
+                            onMouseLeave={() => setTimeout(() => {
+                                setIsOpenBath(false)
+                            }, 1000)}>
                             <Text className={'navList c-b'} fontSize={11}>BATH BODY</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
@@ -74,7 +78,9 @@ function Navbarmenu() {
                     <Menu isOpen={isOpenSkincare} onClose={() => setIsOpenPerfumes(false)}>
                         <MenuButton
                             onMouseEnter={() => setIsOpenSkincare(true)}
-                            onMouseLeave={() => setIsOpenSkincare(false)}>
+                            onMouseLeave={() => setTimeout(() => {
+                                setIsOpenSkincare(false)
+                            }, 1000)}>
                             <Text className={'navList c-b'} fontSize={11}>SKINCARE</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
@@ -89,7 +95,9 @@ function Navbarmenu() {
                     <Menu isOpen={isOpenGifting} onClose={() => setIsOpenGifting(false)}>
                         <MenuButton
                             onMouseEnter={() => setIsOpenGifting(true)}
-                            onMouseLeave={() => setIsOpenGifting(false)}>
+                            onMouseLeave={() => setTimeout(() => {
+                                setIsOpenGifting(false)
+                            }, 1000)}>
                             <Text className={'navList c-b'} fontSize={11}>GIFTING</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
