@@ -1,12 +1,13 @@
 import { Box, Center, SimpleGrid, Text, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import LuxuryItemCard from "./LuxuryItemCard";
+import LuxuryWomenCard from "./LuxuryWomenCard";
 
 function LuxuryCategories() {
     return (
-        <Box p={"5vw"}>
+        <Box p={"5vw"} mx={'9vw'}>
             <Center mb={8}><Text letterSpacing={3} fontSize={'25px'} fontWeight={500}>LUXURY CATEGORIES</Text></Center>
-            <SimpleGrid mx={'9vw'} columns={{ base: 2, lg: 5 }} spacingX={5} placeItems={'center'}>
+            <SimpleGrid columns={{ base: 2, lg: 5 }} spacingX={5} placeItems={'center'}>
                 <LuxuryItemCard
                     ImageSrc={'http://bellavitaorganic.com/cdn/shop/files/intense_1.jpg?v=1702643236&width=800'}
                     Title={'LUXURY PERFUMES'}
@@ -28,6 +29,9 @@ function LuxuryCategories() {
                     Title={'GIFT SETS'}
                     LinkTo={'/'} />
             </SimpleGrid>
+            <br />
+            <br />
+            <LuxuryWomenCard />
         </Box>
     )
 }
