@@ -39,6 +39,16 @@ function Navbar() {
                 scrub: 4,
             }
         })
+        gsap.to(".zIndex", {
+            opacity:0,
+            scrollTrigger:{
+                trigger:".zIndex",
+                scroller:"body",
+                start:"top 159px",
+                end: "top 150px",
+                scrub: 4,
+            }
+        })
     }, [])
     return (
         <Box w={'100vw'} h={'38vw'} id='HomePageNavbar' zIndex={10} >

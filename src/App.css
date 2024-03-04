@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro&display=swap');
+
+#App {
+  width: 100vw;
+}
+
+
+@font-face {
+  font-family: "Twentieth Century";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//bellavitaorganic.com/cdn/fonts/twentieth_century/twentiethcentury_n4.1a7b2b68023505e1927302cc60a155187098ca59.woff2?h1=YmVsbGF2aXRhb3JnYW5pYy5jb20&h2=YmVsYXZpdGFvcmdhbmljLmNvbQ&h3=YmVsbGF2aXRhMS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h4=bmV3LmJlbGxhdml0YW9yZ2FuaWMuY29t&h5=YnZvZ29uYXR1cmFsLmNvbQ&h6=YmVsbGF2dGFvcmdhbmljLmNvbQ&h7=YmVsbGF2aXRhb3JnYW5pYy5pbg&hmac=97eab51b2f45b73a7640721b92632c6d65e8c8ec3b2d13882bb75e4fce2c4672") format("woff2"),
+       url("//bellavitaorganic.com/cdn/fonts/twentieth_century/twentiethcentury_n4.2bd9ba3193feaaeabefe6059cf0ba7e11c41e810.woff?h1=YmVsbGF2aXRhb3JnYW5pYy5jb20&h2=YmVsYXZpdGFvcmdhbmljLmNvbQ&h3=YmVsbGF2aXRhMS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h4=bmV3LmJlbGxhdml0YW9yZ2FuaWMuY29t&h5=YnZvZ29uYXR1cmFsLmNvbQ&h6=YmVsbGF2dGFvcmdhbmljLmNvbQ&h7=YmVsbGF2aXRhb3JnYW5pYy5pbg&hmac=2d9c3b78dc910b6a0bb7b242d250e609d6a65a401b319788fb5c3d5ffae9a980") format("woff");
+}
+
+* {
+
+  font-family: "Twentieth Century", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.source-code {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.viewAllBtn {
+  background-color: white;
+  transition: 0.6s;
+}
+
+.viewAllBtn:hover {
+  background-color: black;
+  transition: 0.6s;
+}
