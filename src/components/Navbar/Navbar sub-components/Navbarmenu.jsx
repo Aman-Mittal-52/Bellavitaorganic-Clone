@@ -37,7 +37,7 @@ function Navbarmenu() {
                             onMouseEnter={() => setIsOpenPerfumes(true)}
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenPerfumes(false)
-                            }, 1000)}>
+                            }, 3000)}>
                             <Text className={'navList c-b'} fontSize={11}>PRFUMES</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
@@ -57,7 +57,7 @@ function Navbarmenu() {
                             onMouseEnter={() => setIsOpenBath(true)}
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenBath(false)
-                            }, 1000)}>
+                            }, 3000)}>
                             <Text className={'navList c-b'} fontSize={11}>BATH BODY</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
@@ -80,7 +80,7 @@ function Navbarmenu() {
                             onMouseEnter={() => setIsOpenSkincare(true)}
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenSkincare(false)
-                            }, 1000)}>
+                            }, 3000)}>
                             <Text className={'navList c-b'} fontSize={11}>SKINCARE</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
@@ -97,7 +97,7 @@ function Navbarmenu() {
                             onMouseEnter={() => setIsOpenGifting(true)}
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenGifting(false)
-                            }, 1000)}>
+                            }, 3000)}>
                             <Text className={'navList c-b'} fontSize={11}>GIFTING</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
