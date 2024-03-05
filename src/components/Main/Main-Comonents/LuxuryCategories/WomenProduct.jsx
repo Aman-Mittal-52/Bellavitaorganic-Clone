@@ -3,11 +3,10 @@ import { CheckCircleIcon, StarIcon } from '@chakra-ui/icons'
 
 function WomenProduct() {
     return (
-        <Box m={15} h={{base:'20vh',lg:"fit-content"}} w={"50%"}>
-            <Box w={'50%'} h={'70%'}>
+        <Box m={45} h={"fit-content"} w={"30%"}>
+            <Box w={'100%'} h={'100%'}>
                 <Image w={'100%'} h={'100%'} objectFit={'cover'} src='https://bellavitaorganic.com/cdn/shop/files/OCEANMan.jpg?v=1693289108&width=300' />
             </Box>
-            <Box borderRadius={6} color='#fff' w={'fit-content'} p={1} pos={'absolute'} left={2} fontSize={12} bottom={2} bg={'teal.300'}>30% off</Box>
             <Box py={3}>
                 <Text fontSize={{lg:10,base:5}} fontWeight={500} className="zIndex" opacity={0.6}>EAU DE PARFUM FOR MEN</Text>
                 <Text w={'25vw'} fontSize={15} letterSpacing={'1px'} fontWeight={600} textOverflow={'ellipsis'} whiteSpace={'nowrap'} overflow={'hidden'}>HOT MESS PERFUME FOR MEN - 100ml</Text>
@@ -28,7 +27,7 @@ function WomenProduct() {
                 display="flex"
                 color="white"
                 bg="black"
-                w={'50%'}
+                w={'100%'}
                 p={3}
             >
                 ADD TO CART

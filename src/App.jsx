@@ -1,15 +1,15 @@
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
-
-import 'swiper/css';
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
   return (
     <div id='App'>
       <Navbar />
-      <Main/>
-      <div style={{height:"100vh"}}></div>
+      <Main />
+      <div style={{ height: "100vh" }}></div>
+      <Footer />
     </div>
   )
 }
