@@ -1,5 +1,13 @@
-export default function Home(){
-    return(
-        <h1>Home</h1>
+import Navbar from "../components/Navbar/Navbar";
+import Main from "../components/Main/Main";
+import Footer from "../components/Footer/Footer";
+
+export default function Home() {
+    return (
+        <>
+            <Navbar />
+            <Main />
+            <Footer />
+        </>
     )
 }
