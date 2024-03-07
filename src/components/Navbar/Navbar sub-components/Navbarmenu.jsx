@@ -10,7 +10,7 @@ import {
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-function Navbarmenu() {
+function Navbarmenu({colorClass}) {
     const [isOpenPerfumes, setIsOpenPerfumes] = useState(false);
     const [isOpenBath, setIsOpenBath] = useState(false);
     const [isOpenSkincare, setIsOpenSkincare] = useState(false);
@@ -18,17 +18,17 @@ function Navbarmenu() {
 
     return (
         <div id='navbarMenu'>
-            <Flex color={'#fff'} h={'50px'} alignItems={'center'} px={'10vw'}>
+            <Flex color={'#fff'} h={'50px'} alignItems={'center'} px={'10vw'} className={colorClass}>
                 <Link to='/pages/build-a-box'>
-                    <Text className={'navList c-b'} fontSize={11}>CRAZY DEALS</Text>
+                    <Text className={'navList'} fontSize={11}>CRAZY DEALS</Text>
                 </Link>
                 <Spacer />
                 <Link to='/collections/all-products'>
-                    <Text className={'navList c-b'} zIndex={2} fontSize={11}>SHOP ALL</Text>
+                    <Text className={'navList'} zIndex={2} fontSize={11}>SHOP ALL</Text>
                 </Link>
                 <Spacer />
                 <Link to='/collections/bestsellers'>
-                    <Text className={'navList c-b'} fontSize={11}>BESTSELLERS</Text>
+                    <Text className={'navList'} fontSize={11}>BESTSELLERS</Text>
                 </Link>
                 <Spacer />
                 <Link to='/collections/luxury-perfumes'>
@@ -38,7 +38,7 @@ function Navbarmenu() {
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenPerfumes(false)
                             }, 3000)}>
-                            <Text className={'navList c-b'} fontSize={11}>PRFUMES</Text>
+                            <Text className={'navList'} fontSize={11}>PRFUMES</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
                             <MenuItem>All Perfumes</MenuItem>
@@ -58,7 +58,7 @@ function Navbarmenu() {
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenBath(false)
                             }, 3000)}>
-                            <Text className={'navList c-b'} fontSize={11}>BATH BODY</Text>
+                            <Text className={'navList'} fontSize={11}>BATH BODY</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
                             <MenuItem>Shower Gel</MenuItem>
@@ -71,7 +71,7 @@ function Navbarmenu() {
                 </Link>
                 <Spacer />
                 <Link to='/collections/new-arrival'>
-                    <Text className={'navList c-b'} fontSize={11}>NEW ARRIVALS</Text>
+                    <Text className={'navList'} fontSize={11}>NEW ARRIVALS</Text>
                 </Link>
                 <Spacer />
                 <Link to='/collections/natural-skin-care-products'>
@@ -81,7 +81,7 @@ function Navbarmenu() {
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenSkincare(false)
                             }, 3000)}>
-                            <Text className={'navList c-b'} fontSize={11}>SKINCARE</Text>
+                            <Text className={'navList'} fontSize={11}>SKINCARE</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
                             <MenuItem>All Skin Care</MenuItem>
@@ -98,7 +98,7 @@ function Navbarmenu() {
                             onMouseLeave={() => setTimeout(() => {
                                 setIsOpenGifting(false)
                             }, 3000)}>
-                            <Text className={'navList c-b'} fontSize={11}>GIFTING</Text>
+                            <Text className={'navList'} fontSize={11}>GIFTING</Text>
                         </MenuButton>
                         <MenuList color={'#000'}>
                             <MenuItem>Gift Sets</MenuItem>

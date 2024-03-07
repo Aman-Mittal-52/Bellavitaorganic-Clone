@@ -4,8 +4,7 @@
     width: calc(100vw - 15px);
 }
 
-#navbar{
-    background: transparent;
+.navbar{
     z-index: 2;
 }
 

@@ -23,11 +23,13 @@ function Navbar() {
         })
         gsap.to(".navbar", {
             borderBottom:"1px solid #2f2f2f69",
-            duration:1.5,
+            duration:0.3,
             scrollTrigger:{
+                scroller:"body",
+                trigger:".navbar",
                 start:"top -14px",
                 end: "top -15px",
-                scrub: 4,
+                scrub: 5,
             }
         })
         gsap.to(".c-b", {
@@ -52,7 +54,7 @@ function Navbar() {
     }, [])
     return (
         <Box w={'100vw'} h={'38vw'} id='HomePageNavbar' zIndex={10} >
-            <MainNavbar />
+            <MainNavbar bgcColor={'transparent'} bgColorClass={'bg-w--c-b'} colorClass={'c-b'}/>
         </Box>
     )
 }

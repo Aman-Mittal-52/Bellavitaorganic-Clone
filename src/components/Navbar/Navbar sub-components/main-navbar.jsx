@@ -27,13 +27,13 @@ import NavbarSearchBox from './NavbarSearchBox';
 import Navbarmenu from './Navbarmenu';
 
 
-function MainNavbar({ bgcColor }) {
+function MainNavbar({ bgcColor, bgColorClass, colorClass }) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
-        <Box bg={bgcColor} className='navbar bg-w--c-b' w={'full'} pos={'fixed'} >
+        <Box bg={bgcColor} className={'navbar '+ bgColorClass } w={'full'} pos={'fixed'} >
             <NavbarTopCarousel />
             <Flex p={{ base: '30px 30px', lg: '30px 150px' }} h={10} alignItems={'center'}>
-                <HamburgerIcon onClick={onOpen} className='c-b' color={'#fff'} mt={4} display={{ base: "block", lg: "none" }} fontSize={35} />
+                <HamburgerIcon onClick={onOpen} className={colorClass} color={'#fff'} mt={4} display={{ base: "block", lg: "none" }} fontSize={35} />
                 <Drawer onClose={onClose} isOpen={isOpen} size={'md'} placement='left'>
                     <DrawerOverlay />
                     <DrawerContent>
@@ -41,7 +41,7 @@ function MainNavbar({ bgcColor }) {
                         <DrawerHeader>{`drawer contents`}</DrawerHeader>
                         <DrawerBody>
                             <Flex alignItems={'center'}>
-                                <CiUser className='c-b' width={'20px'} size={20} />
+                                <CiUser className={colorClass} width={'20px'} size={20} />
                                 <Link to={'/login'}> <ChakraLink p={3}>Login</ChakraLink> </Link>
                             </Flex>
                             <Link to='/pages/build-a-box'>
@@ -104,11 +104,11 @@ function MainNavbar({ bgcColor }) {
                 </Box>
                 <Spacer />
                 <Flex w={28}  color={'#fff'} justifyContent={'space-between'}>
-                    <CiUser className='c-b' size={30} />
-                    <IoBasketOutline className='c-b' size={30} />
+                    <CiUser className={colorClass} size={30} />
+                    <IoBasketOutline className={colorClass} size={30} />
                 </Flex>
             </Flex>
-            <Navbarmenu />
+            <Navbarmenu colorClass={colorClass}/>
         </Box>
     )
 }
